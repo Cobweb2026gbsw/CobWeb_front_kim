@@ -1,0 +1,278 @@
+.Header {
+  height: 88px;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  border-bottom: 1px solid #292929;
+
+  transition: 0.2s;
+}
+
+/* 링크 */
+.Header a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* CobWeb 로고 */
+.Header h1 {
+  margin: 0;
+
+  color: #13fff3;
+
+  font-size: 26px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+/* =========================
+   메뉴
+========================= */
+
+.Header nav {
+  display: flex;
+  align-items: center;
+
+  gap: 32px;
+  margin-left: 60px;
+
+  /* 기존보다 살짝 크게 */
+  font-size: 16px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.Header nav span {
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.Header nav span:hover {
+  color: #13fff3;
+}
+
+/* =========================
+   오른쪽 영역
+========================= */
+
+.side {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  white-space: nowrap;
+}
+
+/* =========================
+   검색창
+========================= */
+
+.search {
+  position: relative;
+
+  width: 320px;
+  height: 42px;
+
+  margin-right: 60px;
+}
+
+.search input {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 55px 0 18px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #505050;
+  border-radius: 22px;
+
+  outline: none;
+
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+.search input::placeholder {
+  color: #686868;
+}
+
+.search input:focus {
+  border-color: #13fff3;
+}
+
+/* 검색 버튼 */
+.search button {
+  position: absolute;
+
+  top: 4px;
+  right: 4px;
+
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: #13fff3;
+  color: #000000;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.search button:hover {
+  transform: scale(1.05);
+
+  opacity: 0.85;
+}
+
+/* =========================
+   공통 버튼
+========================= */
+
+.dark-light,
+.login-button,
+.signup-button {
+  height: 46px;
+
+  padding: 0 24px;
+
+  border-radius: 999px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.dark-light {
+  padding: 0 22px;
+}
+
+.login-button:hover,
+.signup-button:hover,
+.dark-light:hover {
+  border-color: #13fff3;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+.Header.dark {
+  background-color: #121414;
+
+  color: #ffffff;
+}
+
+/* 메뉴 */
+.Header.dark nav {
+  color: #dbfffd;
+}
+
+/* 검색창 */
+.Header.dark .search input {
+  background-color: #121414;
+
+  color: #ffffff;
+
+  border-color: #505050;
+}
+
+/* Light 버튼 */
+.Header.dark .dark-light {
+  background-color: #ffffff;
+
+  color: #000000;
+
+  border: 1px solid #505050;
+}
+
+/* 로그인 / 가입 */
+.Header.dark .login-button,
+.Header.dark .signup-button {
+  background-color: #000000;
+
+  color: #ffffff;
+
+  border: 1px solid #505050;
+}
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+.Header.light {
+  background-color: #dbfffd;
+
+  color: #121414;
+
+  border-bottom: 1px solid #9dbab8;
+}
+
+.Header.light h1 {
+  color: #121414;
+}
+
+/* 메뉴 */
+.Header.light nav {
+  color: #121414;
+}
+
+/* 검색창 */
+.Header.light .search input {
+  background-color: #ffffff;
+
+  color: #121414;
+
+  border-color: #9dbab8;
+}
+
+.Header.light .search input::placeholder {
+  color: #777777;
+}
+
+/* Dark 버튼 */
+.Header.light .dark-light {
+  background-color: #ffffff;
+
+  color: #121414;
+
+  border: 1px solid #9dbab8;
+}
+
+/* 라이트 모드 로그인 / 가입 */
+.Header.light .login-button,
+.Header.light .signup-button {
+  background-color: #ffffff;
+
+  color: #121414;
+
+  border: 1px solid #9dbab8;
+}
+
+/* 라이트모드 hover */
+.Header.light .login-button:hover,
+.Header.light .signup-button:hover,
+.Header.light .dark-light:hover {
+  border-color: #121414;
+}

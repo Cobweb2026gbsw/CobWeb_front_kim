@@ -1,0 +1,127 @@
+.LoginPage {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: #121414;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+
+.LoginBox {
+  width: 400px;
+  padding: 45px 50px 30px;
+
+  background-color: #121414;
+
+  border: 1px solid #505050;
+  border-radius: 16px;
+
+  box-sizing: border-box;
+}
+
+.LoginBox h1 {
+  margin: 0 0 40px;
+
+  text-align: center;
+  font-size: 32px;
+}
+
+.LoginBox p {
+  margin: 20px 0 8px;
+
+  font-size: 14px;
+  color: #d7d7d7;
+}
+
+.LoginBox input {
+  width: 100%;
+  height: 42px;
+
+  background-color: transparent;
+
+  border: none;
+  border-bottom: 1px solid #777;
+
+  color: white;
+  font-size: 15px;
+
+  outline: none;
+}
+
+.LoginBox input::placeholder {
+  color: #777;
+}
+
+.LoginBox input:focus {
+  border-bottom: 1px solid #64e6ca;
+}
+
+.login-links {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 18px !important;
+}
+
+.login-links a {
+  color: #64e6ca;
+
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+.LoginBox button {
+  width: 100%;
+  height: 45px;
+
+  margin-top: 30px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #000000;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.LoginBox button:hover {
+  opacity: 0.85;
+}
+
+/* CobWeb */
+.LoginBox .login-logo {
+  margin: 30px 0 0;
+
+  text-align: center;
+
+  color: #64e6ca;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.LoginPage.light {
+  background-color: #dbfffd;
+  color: #121414;
+}
+
+.LoginPage.light .LoginBox {
+  background-color: #f4fffe;
+  border-color: #9dbab8;
+}
+
+.LoginPage.light .LoginBox p { color: #536260; }
+.LoginPage.light .LoginBox input { border-bottom-color: #9dbab8; color: #121414; }
+.LoginPage.light .LoginBox input::placeholder { color: #71807e; }
+.LoginPage.light .LoginBox button { background-color: #121414; color: #ffffff; }
